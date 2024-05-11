@@ -1,0 +1,8 @@
+.ajuste {
+    width: 300px; /* Ancho del contenedor */
+  }
+  
+  .ajuste p {
+    word-wrap: break-word; /* Romper palabras largas */
+  }
+  

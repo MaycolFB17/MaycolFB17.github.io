@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+        .contenedor {
+          width: 95%; /* Ancho del contenedor principal */
+          margin: 0 auto; /* Centrar el contenedor */
+        }
+        .imagen-flotante {
+          float: right; /* Flotar la imagen a la derecha */
+          margin-left: 10px; /* Espacio entre la imagen y el texto */
+        }
+      </style>
+    <style>
+      .condicional {
+        width: 80.5%; /* Ancho del contenedor principal */
+        margin: 0 auto; /* Centrar el contenedor */
+      }
+      .imagen-flotante {
+        float: right; /* Flotar la imagen a la derecha */
+        margin-left: 10px; /* Espacio entre la imagen y el texto */
+      }
+    </style>
+
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            package: ['cancel'],
+            macros: {
+                // Conjuntos numéricos
+	            R: "{\\mathbb{R}}", 
+	            Q:"{\\mathbb{Q}}",
+                N:"{\\mathbb{N}}",
+                Z:"{\\mathbb{Z}}",
+                I:"{\\mathbb{I}}",
+                cv:"{\\emptyset}",
+                // letras griegas
+                al:"{\\alpha}",  // alfa
+                be:"{\\beta}",  // beta
+                te:"{\\theta}", // theta
+                ga:"{\\gamma}", // gamma
+                om:"{\\omega}", // omega       
+                Om:"{\\Omega}", // Omega
+                // símbolos matemáticos
+                fr: ["{\\dfrac{#1}{#2}}",2], // fracción 
+                Me:["{\\left[\\hspace{-0.4cm} \\left[ #1 \\right]\\hspace{-0.4cm}  \\right]}",1],  // Máximo entero
+                ara:["{\\overparen{#1}}",1] , // arco arriba
+            }
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+
+<link rel="stylesheet" href="styles.css"> <!-- Archivo CSS externo -->
+
+</head>
+<body>
+    <h1 style="text-align: center; font-size: 50px;"><u>FORMULARIO DE DERIVADAS</u></h1>
+    <p style="font-size: 40px;">Definición de la derivada:</p>
+    <p style="text-align: center; font-size: 32px;">$f'(x)= \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$</p>
+    <p style="font-size: 35px;">Reglas de derivación:</p>
+    <p style="font-size: 30px;"><u>1. Función constante:</u></p>
+    <p style="font-size: 30px;">Sea: $f(x)=c \implies f'(x)=0,$ donde $c \in \R$</p>
+    <p style="font-size: 30px;">Demostración:</p>
+    <p style="font-size: 28px;">Por definición sabemos que: $f'(x)= \lim_{h \to 0} \frac{f(x+h) - f(x)}{h};$ pero también que: $f(x+h)=f(x) \implies f'(x)= \lim_{h \to 0} \frac{c-c}{h} \implies \lim_{h \to 0} \frac{0}{h}= 0$</p>
+        <div class="contenedor">
+          <img src="Función constante..jpg" alt="Función constante" class="imagen-flotante" width="310" height="200">
+        </div>
+    <p style="font-size: 30px;">Ejemplos:</p>
+    <p style="font-size: 25px;">* $f(x)=17 \implies f'(x)=0$</p>
+    <p style="font-size: 25px;">* $g(x)=\al+29+\be^2 \implies g'(x)=0$</p>
+    <p style="font-size: 25px;">* $h(x)=(n^2-4) \implies h'(x)=0 $
+
+        <script>
+          document.write("==================================================================================================================================<br>")
+        </script>
+
+            <div class="contenedor">
+              <img src="f(x)=x.jpg" alt="Función identidad" class="imagen-flotante" width="300" height="190">
+            </div>
+    <p style="font-size: 30px;"><u>2. Función identidad:</u></p>
+    <p style="font-size: 30px;">Sea $f(x)=x \implies f'(x)=1 $</p>
+    <p style="font-size: 30px;">Demostración:</p>
+    <div class="condicional">
+      <img src="Condicional 2.png" alt="Condicional" class="imagen-flotante" width="70" height="100">
+    </div>
+    <p style="font-size: 28px;">Sabemos: $f'(x)= \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} \implies \lim_{h \to 0} \frac{(x+h)-x}{h} \implies \lim_{h \to 0} \frac{h}{h} = 1 \quad &therefore; f'(x)=1 \quad lqqd$</p>
+    <p style="font-size: 28px;">Obs: El coeficiente de "x" es 1, de ahí que al derivar sea 1</p>
+    <div class="contenedor">
+      <img src="f(x)=1.jpg" alt="Función constante" class="imagen-flotante" width="350" height="240">
+    </div>
+    <p style="font-size: 30px;">Ejemplos:</p>
+    <p style="font-size: 25px;">* $f(n)=n \implies f'(x)=1 $</p>
+    <p style="font-size: 25px;">* $g(\al)=5\al \implies g'(\al)=5 $</p>
+    <p style="font-size: 25px;">* $h(\ga)=23\ga \implies h'(\ga)=23 $</p>
+        <script>
+          document.write("============================================================================================================================================================================================================<br>")
+        </script>
+
+    <p style="font-size: 30px;"><u>3. Función potencia:</u></p>
+    <div class="contenedor">
+      <img src="x^0.5.jpg" alt="Función raíz cuadrada" class="imagen-flotante" width="370" height="250">
+    </div>
+    <p style="font-size: 30px;">Sea $f(x)=x^n;$ donde $ n \in \N \implies f'(x)=nx^{n-1} $</p>
+    <p style="font-size: 30px;">Demostración:</p>
+    <p style="font-size: 28px;">Sabemos: $f'(x)= \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} \implies f'(x)= \lim_{h \to 0} \frac{(x+h)^n-x^n}{h}; \quad\quad (x+h)^n=x^n+nx^{x-1}h+ \frac{n(n+1)}{2}x^{n-2}h^2+...+h^n$ <br> $ \implies f'(x)=\lim_{h \to 0} \frac{(x^n + nx^{n-1}h + \frac{n(n+1)}{2}x^{n-2}h^2 +...+h^n)-x^n}{h} \implies f'(x)=\lim_{h \to 0} nx^{n-1} + \frac{n(n+1)}{2}x^{n-2}h +...+h^{n-1} $</p>
+    <div class="condicional">
+      <img src="Condicional 2.png" alt="Condicional" class="imagen-flotante" width="70" height="100">
+    </div>
+    <p style="font-size: 28px;">Obs: Como "$h$" tiende a ser $0$, todos los factores que tengan un "$h$", también tenderá a $0,$ pues sería como multiplicar por $0$ <br> &therefore; $f'(x)=nx^{n-1} \quad lqqd$ </p>
+    <p style="font-size: 30px;">Ejemplo: $f(x)=5x^3 \implies f'(x)=5.3x^{(3-1)} = 15x^2$</p>
+    <div class="contenedor">
+      <img src="f(x)=0.5x^-0.5.jpg" alt="Derivada de la función ráíz cuadrada" class="imagen-flotante" width="370" height="250">
+    </div>
+    <p style="font-size: 28px;">Extendiendo la regla para $ n \in \Q: $ <br> Ejemplos: </p>
+    <p style="font-size: 25px;">* $g(\al)=\frac{1}{2} \al^6 \implies g'(\al)=\frac{1}{2}.6\al^{(6-1)} = 3\al^5 $</p>
+    <p style="font-size: 25px;">* $h(\ga)=\frac{1}{\ga}=\ga^{-1} \implies h'(\ga)=1.(-1)\ga^{(-1-1)} = -\ga^-2 = -\frac{1}{\ga^2} $</p>
+    <p style="font-size: 25px;">* $f(\om)=\sqrt{\om} = \om^{\frac{1}{2}} \implies f'(\om)=\frac{1}{2}\om^{(\frac{1}{2}-1)} = \frac{1}{2}\om^{\frac{-1}{2}}= \frac{1}{2}\frac{1}{\sqrt{\om}}= \frac{1}{2\sqrt{\om}} $</p>
+        <script>
+          document.write("============================================================================================================================================================================================================<br>")
+        </script>
+    <div class="contenedor">
+      <img src="f(x)=e^x.jpg" alt="Derivada de la función ráíz cuadrada" class="imagen-flotante" width="370" height="250">
+    </div>
+    <p style="font-size: 30px;"><u>4. Función exponencial:</u> Para: $b>0$ &and; $b &ne; 1 $</p> 
+    <p style="font-size: 30px;">Sea: $f(x)=b^x \implies f'(x)=b^xln(b)$</p>
+    <p style="font-size: 30px;">Demostración:</p>
+    <p style="font-size: 28px;">Sabemos: $f'(x)= \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} \implies f'(x)= \lim_{h \to 0} \frac{b^{x+h}-b^x}{h} = \lim_{h \to 0} (b^x\frac{(b^h-1)}{h})$ <br> $\implies f'(x)= b^x.\lim_{h \to 0} \frac{b^h-1}{h}$</p> 
+    <div class="condicional">
+      <img src="Condicional 2.png" alt="Condicional" class="imagen-flotante" width="70" height="100">
+    </div>
+    <p style="font-size: 28px;">Obs: El número de Euler ($e$) tiene una definición por límites: <br> $e= \lim_{x \to &infin;}(1+\frac{1}{x})^x;$ o equivalentemente: $e= \lim_{x \to 0}(1+x)^{\frac{1}{x}}$ <br> $\implies$ tenemos: $\lim_{h \to 0} \frac{b^h-1}{h};$ luego, $b^h-1=t \implies b^h=1+t \implies ln(b^h)=ln(1+t) \implies h.ln(b)=ln(1+t) \implies h=\frac{ln(1+t)}{ln(b)}$ <br> Remplazamos: $ \lim_{t \to 0} \frac{t}{\frac{ln(1+t)}{ln(b)}} =\lim_{t \to 0} \frac{t.ln(b)}{ln(1+t)} = \lim_{t \to 0} \frac{ln(b)}{\frac{1}{t}.ln(1+t)}= \lim_{t \to 0} \frac{ln(b)}{ln(1+t)^{\frac{1}{t}}} = \frac{ln(b)}{\lim_{t \to 0}[ln(1+t)^{\frac{1}{t}}]} = \frac{ln(b)}{ln(\lim_{t \to 0}[(1+t)^{\frac{1}{t}}])}$ <br> Pero: $e= \lim_{t \to 0}(1+t)^{\frac{1}{t}} \implies \frac{ln(b)}{ln(e)}$ &and; $ln(e)=1 \implies \frac{ln(b)}{ln(e)} = ln(b) \quad &therefore; \lim_{h \to 0}\frac{b^h-1}{h}=ln(b)$ <br> $\implies$ teniamos: $f'(x)= b^x.\lim_{h \to 0} \frac{b^h-1}{h} \quad &therefore; f'(x)=b^x.ln(b) \quad lqqd $</p>
+    <div class="contenedor">
+      <img src="f(x)=e^x.jpg" alt="Derivada de la función ráíz cuadrada" class="imagen-flotante" width="370" height="250">
+    </div>
+    <p style="font-size: 30px;">Ejemplos:</p>
+    <p style="font-size: 25px;">* $f(x)=2^x \implies f'(x)=2^x.ln(2) $</p>
+    <p style="font-size: 25px;">* $g(x)=e^x \implies g'(x)=e^x.ln(e)=e^x$</p>
+    <p style="font-size: 25px;">* $h(x)=(\frac{29}{17})^x \implies h'(x)=(\frac{29}{17})^x.ln(\frac{29}{17}) $</p>
+        <script>
+          document.write("============================================================================================================================================================================================================<br>")
+        </script>
+    <p style="font-size: 30px;"><u>4. Función logaritmo:</u> Para: $b>0$ &and; $b &ne; 1 $</p>
+  </body>
+</html>
